@@ -1,12 +1,20 @@
 package com.cydeo.mentor.entity;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
-public class Category {
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Getter
+@Setter
+@Entity
+@NoArgsConstructor
+public class Category extends BaseEntity{
 
 
-    private Long id;
     private String categoryName;
     private int tax;
 

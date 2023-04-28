@@ -1,12 +1,20 @@
 package com.cydeo.mentor.entity;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
-public class State {
+import javax.persistence.Entity;
+
+@Getter
+@Setter
+@Entity
+@NoArgsConstructor
+public class State extends BaseEntity {
 
 
-    private Long id;
+
     private String stateCode;
     private String stateName;
 }

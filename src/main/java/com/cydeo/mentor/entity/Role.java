@@ -1,11 +1,19 @@
 package com.cydeo.mentor.entity;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
-public class Role {
+import javax.persistence.Entity;
+
+@Getter
+@Setter
+@Entity
+@NoArgsConstructor
+public class Role extends BaseEntity{
 
 
-    private Long id;
+
     private String name;
 }
